@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Lancer GCC/GDB", // Nom affiché dans le menu Débogage
+            "type": "cppdbg",
+            "request": "launch",
+            // 🛑 A AJUSTER : Le nom de l'exécutable généré par 'tasks.json'
+            "program": "${workspaceFolder}/table-multiplication.exe", 
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true, // Ouvre une fenêtre séparée pour l'I/O (recommandé sous Windows)
+            "MIMode": "gdb",
+            
+            // 🛑 A VERIFIER : Chemin vers le débogueur GDB de ton installation MinGW
+            "miDebuggerPath": "C:/MinGW/bin/gdb.exe", 
+            
+            // Doit correspondre au label que tu utiliseras dans tasks.json (voir la suite)
+            "preLaunchTask": "Compiler C++ MinGW" 
+        }
+    ]
+}
