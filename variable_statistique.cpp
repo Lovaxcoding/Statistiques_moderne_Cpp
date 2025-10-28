@@ -261,7 +261,7 @@ int main() {
                     break;
                 }
                 case 4:
-                    std::cout << "\nAu revoir. 👋\n";
+                    std::cout << "\nAu revoir. \n";
                     break;
                 default:
                     std::cerr << "Choix invalide. Veuillez reessayer.\n";
